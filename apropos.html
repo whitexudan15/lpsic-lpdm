@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Apropos - lpsic-lpmmi</title>
+        <link rel="icon" type="image/png" href="./assets/logos/LPSIC-removebg-preview.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <style>
+        /* Centrer le loader sur la page */
+        .loader {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+            z-index: 99999;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="loader" id="loader">
+            <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/dotSpinner.js"></script>
+            <l-dot-spinner
+                size="80"
+                speed="1"
+                color="#000050"
+                style="padding-bottom: 50px;"
+            ></l-dot-spinner>
+        </div>
+        <!--Menu/Navbar-->
+        <div id="home"></div>
+        <nav class="lux-navbar container-fluid navbar navbar-expand-lg navbar-dark" id="navbar">
+            <div class="container">
+                <a class="navbar-brand text-uppercase" href="index.html">
+                    <img src="./assets/logos/LPSIC-removebg-preview.png" alt="" style="height: 60%; width: 120px">
+                </a>
+                <button
+                    class="navbar-toggler py-1"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    id="toggler"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item pe-4">
+                            <a href="index.html" class="nav-link active">Accueil</a>
+                        </li>
+                        <li class="nav-item pe-4">
+                            <a class="nav-link actives" href="apropos.html"> À Propos</a>
+                        </li>
+                        <li class="nav-item pe-4">
+                            <a href="admission.html" class="nav-link">Admission</a>
+                        </li>
+                        <li class="nav-item pe-4">
+                            <a href="formation.html" class="nav-link">Formations</a>
+                        </li>
+                        <li class="nav-item pe-4">
+                            <a class="nav-link" href="evenement.html"> Evènements</a>
+                        </li>
+                        <li class="nav-item pe-4">
+                            <a href="contact.html" class="nav-link">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Presentation-->
+        <section class="presentation">
+            <div class="row d-flex text-center text-light px-5 mx-5">
+                <h1>À PROPOS</h1>
+                <div class="d-flex justify-content-center pt-2">
+                    <small class="pe-3">LPSIC-LPMMI</small>
+                    <box-icon
+                        name="chevron-right"
+                        animation="fade-left"
+                        color="#ffffff"
+                        class=""
+                    ></box-icon>
+                    <small class="">A PROPOS</small>
+                </div>
+            </div>
+        </section>
+        <!--Historique-->
+        <section class="his pb-4 pt-5">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="historique col-lg-5 px-2">
+                        <h1 class="mb-4 visible-right">Historique</h1>
+                        <div class="historique-body visible-left">
+                            <p class="">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                fuga. Provident, quo iure nulla sint quasi distinctio ut
+                delectus esse eveniet libero sed suscipit magnam! Lorem ipsum
+                dolor sit amet consectetur, adipisicing elit. Nulla qui
+                similique facilis, eos, nam adipisci, repudiandae deserunt quas
+                ea fuga sint tempora sed maiores alias? Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Culpa praesentium eos
+                            </p>
+                        </div>
+                    </div>
+                    <div class="illus visible-top col-lg-7 px-2">
+                        <div class="historique-image mt-4">
+                            <img src="./assets/images/PSX_20240419_11312.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Responsable-->
+        <section class="respo pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-sm-12 px-2 d-none d-lg-block">
+                        <img src="./assets/images/PSX_20240419_1138113.png" alt="" class="img-fluid respo-pass">
+                    </div>
+                    <div class="col-lg-7 col-sm-12 px-2 justify-content-center align-items-center">
+                        <div class="visible-right">
+                            <div class="card-respo-inner">
+                                <div class="back mt-2 mb-5">
+                                    <div class="titre-citation">
+                                        <h1 class="visible-right">Mot Du Responsable</h1>
+                                    </div>
+                                    <blockquote class="citation quote">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui
+                                    </blockquote>
+                                    <div class="visible-right">
+                                        <h1>Pacôme NYABO</h1>
+                                        <small class="">
+                                            Responsable LPSIC-LPMMI
+                                            <br>
+                                            Kara-TOGO
+                                        </small
+                    >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 px-2 d-sm-block d-lg-none">
+                        <img src="./assets/images/PSX_20240419_1138113.png" alt="" class="img-fluid respo-pass">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Nos Valeurs-->
+        <section class="valeur-bg pb-4">
+            <section class="Valeur container">
+                <div class="row">
+                    <div class="col-lg-6 valeur-section px-3">
+                        <h1 class="text-uppercase">NOS VALEURS</h1>
+                        <ul>
+                            <li class="none">
+                                <p class="visible-left">
+                                    <span>L</span>
+                                    utte : Contre les cybermenaces en formant des
+                  professionnels qualifiés en sécurité informatique.
+                                </p>
+                            </li>
+                            <li class="none">
+                                <p class="visible-left">
+                                    <span>P</span>
+                                    artageabilité : Favoriser la sociabilité envers
+                  les étudiants, les enseignants, le personnel et toutes les
+                  autres parties prenantes impliquées dans nos initiatives de
+                  Sécurité.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="visible-left">
+                                    <span>S</span>
+                                    ensibilisation : À l'importance de la sécurité
+                  informatique et promouvoir les meilleures pratiques en matière
+                  de cybersécurité.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="visible-left">
+                                    <span>I</span>
+                                    nnovation : Cultiver l'innovation avec
+                  générosité dans nos efforts pour constamment améliorer les
+                  performances et les pratiques en matière de cybersécurité.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="visible-left">
+                                    <span>C</span>
+                                    hercher le succès éclatant comme objectif ultime
+                  de tous nos projets et initiatives en cybersécurité.
+                                </p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="none">
+                                <p class="visible-left">
+                                    <span>L</span>
+                                    eadership : Incarner un leadership responsable
+                  dans toutes nos pratiques de développement web et mobile.
+                                </p>
+                            </li>
+                            <li class="none">
+                                <p class="visible-left">
+                                    <span>P</span>
+                                    rogrès : Promouvoir le progrès et l'innovation
+                  dans toutes nos pratiques de développement
+                                </p>
+                            </li>
+                            <li>
+                                <p class="visible-left">
+                                    <span>M</span>
+                                    érite : Reconnaître et encourager le mérite
+                  académique et professionnel dans toutes nos pratiques de
+                  développement web et mobile.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="visible-left">
+                                    <span>M</span>
+                                    obilisation : Encourager la mobilisation de
+                  ressources et d'efforts pour soutenir l'innovation et
+                  l'excellence dans toutes nos pratiques de développement des
+                  médias numériques
+                                </p>
+                            </li>
+                            <li>
+                                <p class="visible-left">
+                                    <span>I</span>
+                                    mpact : Chercher à créer un impact positif et
+                  significatif à travers l'innovation et l'excellence dans
+                  toutes nos pratiques
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 mt-5 px-3 valeur-image d-none d-md-none d-lg-block visible-right">
+                        <img src="./assets/images/PXL_20240224_100758468.NIGHT~4.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!--Footer-->
+        <footer class="">
+            <div class="footer-body container">
+                <div class="row pb-3 pt-5 footer-items">
+                    <div class="col-md-12 col-lg-6 d-none d-lg-block text-center-md">
+                        <img
+                            src="./assets/logos/universite_kara_logo-800x510.jpg"
+                            alt=""
+                            class="img-fluid"
+                            style="height: 150px; width: 400px; margin-bottom: 25px"
+                        >
+                        <div>
+                            <h3>UNIVERSITÉ DE KARA</h3>
+                            <p style="font-size: 16px;">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolores, id enim ea voluptate porro eaque odit? Necessitatibus
+                harum esse iste.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 range mb-4 text-center-md">
+                        <h5>Lien Utiles</h5>
+                        <a href="#">
+                            <i class="bx bxs-chevron-right bx-fade-left" style="color:#ff0003; padding-right: 5px;"></i>
+                            A propos
+                        </a>
+                        <a href="#">
+                            <i class="bx bxs-chevron-right bx-fade-left" style="color:#ff0003; padding-right: 5px;"></i>
+                            Admission
+                        </a>
+                        <a href="#">
+                            <i class="bx bxs-chevron-right bx-fade-left" style="color:#ff0003; padding-right: 5px;"></i>
+                            Formations
+                        </a>
+                        <a href="#">
+                            <i class="bx bxs-chevron-right bx-fade-left" style="color:#ff0003; padding-right: 5px;"></i>
+                            Ressources
+                        </a>
+                        <a href="#">
+                            <i class="bx bxs-chevron-right bx-fade-left" style="color:#ff0003; padding-right: 5px;"></i>
+                            Galerie
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 range mb-4 text-center-md">
+                        <h5>Coordonnées</h5>
+                        <a href="#" class="pb-1">
+                            <i class="bx bxs-location-plus" style="color:#ff0003; padding-right: 5px;"></i>
+                            Pya, Togo Route N°1
+                        </a>
+                        <a href="#" class="pb-1">
+                            <i class="bx bxs-phone bx-tada" style="color:#ff0003; padding-right: 5px;"></i>
+                            +22870091604
+                        </a>
+                        <a href="#" class="pb-1">
+                            <i class="bx bxs-envelope" style="color:#ff0003; padding-right: 5px;"></i>
+                            claudixime15@yahoo.com
+                        </a>
+                    </div>
+                    <div class="col-md-12 col-lg-6 mt-5 d-sm-block d-lg-none text-center-md">
+                        <img
+                            src="./assets/logos/universite_kara_logo-800x510.jpg"
+                            alt=""
+                            class="img-fluid"
+                            style="height: 150px; width: 400px; margin-bottom: 25px"
+                        >
+                        <div>
+                            <h3>UNIVERSITÉ DE KARA</h3>
+                            <p style="font-size: 16px;">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolores, id enim ea voluptate porro eaque odit? Necessitatibus
+                harum esse iste.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center" style="font-size: 10px; color: #00d0ff;">
+                    Copyright &copy; 2024 LPSIC-LPMMI | All Rights Reserved | By GEEKS
+          Club
+                </p>
+            </div>
+        </footer>
+        <div class="home-button">
+            <div class="back-button">
+                <a href="#home">
+                    <box-icon
+                        name="chevron-up"
+                        animation="tada"
+                        type="solid"
+                        color="#000050"
+                    ></box-icon>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Attendre que la page soit complètement chargée
+        window.addEventListener("load", function () {
+            // Cacher le loader après 3 secondes
+            setTimeout(function () {
+                document.getElementById("loader").style.display = "none";
+            }, 500);
+        });
+        // Navbar background changing
+document.addEventListener("DOMContentLoaded", function () {
+  const navbar = document.querySelector(".lux-navbar");
+  const toggler = document.getElementById("toggler");
+
+  // Scroll event for sticky navbar
+  window.addEventListener("scroll", function () {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop >= 100) {
+      navbar.classList.add("sticky");
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  });
+
+  // Toggler click event for changing background color
+  toggler.addEventListener("click", function () {
+    var isExpanded = this.getAttribute("aria-expanded") === "true";
+
+    if (isExpanded) {
+      navbar.style.background = "#000050";
+    } else {
+      navbar.style.background = "transparent";
+    }
+  });
+});
+    </script>
+</body>
+</html>
