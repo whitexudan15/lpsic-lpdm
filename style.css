@@ -8,19 +8,19 @@
 }
 .grey-qo-regular {
   font-family: "Grey Qo", cursive;
-  font-weight: 500;
+  font-weight: 600;
   font-style: normal;
   font-size: 100px;
 }
 .lobster-regular {
   font-family: "Lobster", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-style: normal;
   font-size: 100px;
 }
 .monsieur-la-doulaise-regular {
   font-family: "Monsieur La Doulaise", cursive;
-  font-weight: 500;
+  font-weight: 600;
   font-style: normal;
   font-size: 100px;
 }
@@ -138,12 +138,12 @@
 /*######### Menu/Navbar ##########*/
 .lux-navbar {
   background: transparent;
-  font-weight: 700;
+  font-weight: 800;
   z-index: 999;
   position: absolute;
   top: 0;
   width: 100%;
-  font-weight: 700;
+  font-weight: 800;
   transition: top 1s;
   -webkit-transition: top 1s;
   -moz-transition: top 1s;
@@ -219,7 +219,7 @@
 
 .myCarousel h1 {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 800;
   opacity: 1;
 }
 
@@ -269,7 +269,7 @@ h1.ml8 {
   color: var(--bluesky);
   border: 2px solid var(--bluesky);
   height: 50px;
-  font-weight: 700;
+  font-weight: 800;
   background: none;
   text-decoration: none;
   transition: all ease-in-out 0.5s;
@@ -282,7 +282,7 @@ h1.ml8 {
 
 .text-caption a:hover {
   color: var(--bluedark);
-  font-weight: 700;
+  font-weight: 800;
   background: var(--bluesky);
 }
 .carousel-item:nth-child(2).active .text-caption a {
@@ -298,7 +298,7 @@ h1.ml8 {
 
 .text-caption p {
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 700;
   opacity: 0;
   margin-bottom: 20px;
   text-align: left;
@@ -324,7 +324,7 @@ h1.ml8 {
   -o-transform: translate(-50%, -65%);
 }
 .ml15 {
-  font-weight: 700;
+  font-weight: 800;
   font-size: 4em;
   text-transform: uppercase;
   letter-spacing: 0.2px;
@@ -334,7 +334,7 @@ h1.ml8 {
   color: var(--bluesky);
 }
 .ml11 {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.5em;
 }
 
@@ -441,12 +441,12 @@ h1.ml8 {
   display: inline-block;
   padding-bottom: 25px;
   transition: 3s ease;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--bluedark);
 }
 .intro2 p {
   padding-top: 15px;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--bluedark);
 }
 
@@ -474,7 +474,7 @@ h1.ml8 {
 .intro1 h2,
 .intro3 h2 {
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--bluedark);
 }
 
@@ -487,7 +487,7 @@ h1.ml8 {
   width: 200px;
   padding: 10px;
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .intro1 a:hover,
@@ -512,7 +512,7 @@ h1.ml8 {
   -o-transform: translate(-60%, -30%);
 }
 .nos-activite-text h1 {
-  font-weight: 700;
+  font-weight: 800;
 }
 .nos-activite img {
   width: 100%;
@@ -541,7 +541,7 @@ h1.ml8 {
 .evenement-h1 h1 {
   position: relative;
   padding-bottom: 20px;
-  font-weight: 700;
+  font-weight: 800;
   color: #000050;
 }
 .evenement-h1 h1::after {
@@ -592,7 +592,7 @@ h1.ml8 {
   position: relative;
   display: inline-block;
   padding-bottom: 25px;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--bluedark);
 }
 .formation-container h1::after {
@@ -611,7 +611,7 @@ h1.ml8 {
   width: 100px;
 }
 .formation-card .dev {
-  font-weight: 700;
+  font-weight: 800;
 }
 .formation-block a {
   text-decoration: none;
@@ -620,7 +620,7 @@ h1.ml8 {
   margin: 5px 0 0 5px;
 }
 .formation-card h2 {
-  font-weight: 700;
+  font-weight: 800;
   font-size: 45px;
 }
 
@@ -640,7 +640,7 @@ h1.ml8 {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
 }
-.lpmmi {
+.lpdm {
   color: var(--bluedark);
   padding: 20px 20px 20px 30px;
   margin-bottom: 20px;
@@ -653,7 +653,7 @@ h1.ml8 {
   -o-transition: all 0.3s ease-in-out;
 }
 .lpsic:hover,
-.lpmmi:hover {
+.lpdm:hover {
   color: var(--bluedark);
   background: var(--bluesky);
 }
@@ -672,7 +672,7 @@ h1.ml8 {
   position: relative;
   display: inline-block;
   padding-bottom: 25px;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--bluedark);
 }
 
@@ -695,7 +695,7 @@ h1.ml8 {
 .numero {
   background: var(--bluedark);
   color: var(--white);
-  font-weight: 700;
+  font-weight: 800;
   width: 100px;
   height: 45px;
   justify-content: center;
@@ -705,11 +705,11 @@ h1.ml8 {
 }
 
 .atout-title h4 {
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .atout-title p {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /*########## Nos Professeurs ##########*/
@@ -722,7 +722,7 @@ h1.ml8 {
   position: relative;
   display: inline-block;
   padding-bottom: 25px;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--bluedark);
 }
 .professor-container h1::after {
@@ -840,12 +840,12 @@ h1.ml8 {
 .card-container span:nth-child(1) {
   letter-spacing: 1px;
   font-size: 25px;
-  font-weight: 700;
+  font-weight: 800;
 }
 .card-container span:nth-child(2) {
   line-height: 2px;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
 }
 .text-content p {
   font-size: 13px;
@@ -938,7 +938,7 @@ h1.ml8 {
 .mission-section h1 {
   position: relative;
   color: var(--bluedark);
-  font-weight: 700;
+  font-weight: 800;
   padding: 20px;
   padding-top: 50px;
 }
@@ -954,7 +954,7 @@ h1.ml8 {
 .mission-section p {
   color: var(--bluedark);
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   padding: 20px;
   text-align: center;
 }
@@ -979,7 +979,7 @@ h1.ml8 {
 /*########## Activities ###########*/
 .activite-recente h1 {
   color: #000050;
-  font-weight: 700;
+  font-weight: 800;
   position: relative;
   padding-bottom: 25px;
 }
@@ -1033,7 +1033,7 @@ h1.ml8 {
   transform: scale(1.1);
 }
 .activite-recente h5 {
-  font-weight: 700;
+  font-weight: 800;
   color: var(--bluedark);
 }
 .activite-recente small {
@@ -1043,7 +1043,7 @@ h1.ml8 {
   text-decoration: none;
   padding-right: 15px;
   color: var(--bluesky);
-  font-weight: 700;
+  font-weight: 800;
 }
 .activite-recente p {
   padding-top: 10px;
@@ -1059,7 +1059,7 @@ h1.ml8 {
 }
 .compteur-titre h1 {
   color: var(--bluedark);
-  font-weight: 700;
+  font-weight: 800;
   position: relative;
   padding-bottom: 25px;
 }
@@ -1078,17 +1078,17 @@ h1.ml8 {
   width: 100px;
 }
 .compteur span {
-  font-weight: 700;
+  font-weight: 800;
   font-size: 25px;
 }
 .count {
   font-size: 4rem;
   color: var(--bluesky);
-  font-weight: 700;
+  font-weight: 800;
 }
 .compteur p {
   color: var(--bluedark);
-  font-weight: 700;
+  font-weight: 800;
   font-size: 30px;
   position: relative;
   padding-bottom: 10px;
@@ -1242,7 +1242,7 @@ h1.ml8 {
 /*########## Témoignages ###########*/
 .temoignage h1 {
   color: var(--bluedark);
-  font-weight: 700;
+  font-weight: 800;
   position: relative;
   padding-bottom: 25px;
 }
@@ -1301,7 +1301,7 @@ h1.ml8 {
   margin-right: 15px;
 }
 .titre-info h3 {
-  font-weight: 700;
+  font-weight: 800;
   color: var(--bluedark);
 }
 .titre-info span {
@@ -1406,7 +1406,7 @@ footer {
   flex-direction: column;
 }
 .range h5 {
-  font-weight: 700;
+  font-weight: 800;
   position: relative;
   padding-bottom: 30px;
 }
@@ -1515,7 +1515,7 @@ footer {
   }
   .text-caption p {
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 700;
     opacity: 0;
     margin-bottom: 20px;
     text-align: center;
@@ -1540,7 +1540,7 @@ footer {
     -o-transform: translate(-50%, -80%);
   }
   .ml15 {
-    font-weight: 700;
+    font-weight: 800;
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 0.2px;
@@ -1603,14 +1603,14 @@ footer {
 .presentation small,
 .presentation-contact small {
   color: var(--white);
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .presentation h1,
 .presentation-contact h1 {
   color: var(--bluesky);
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 800;
   position: relative;
   display: inline-block;
   padding-bottom: 20px;
@@ -1682,7 +1682,7 @@ footer {
   font-size: 40px;
   margin-bottom: 10px;
   color: var(--bluedark);
-  font-weight: 700;
+  font-weight: 800;
   padding-bottom: 20px;
 }
 .historique h1::after {
@@ -1746,7 +1746,7 @@ footer {
   position: relative;
   font-size: 40px;
   margin-bottom: 10px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0.1px;
   padding-bottom: 20px;
 }
@@ -1862,7 +1862,7 @@ footer {
 .valeur-section ul p {
   margin: 20px 0 20px 0;
   position: relative;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--white);
 }
 .valeur-section ul p::before {
@@ -1874,12 +1874,12 @@ footer {
 .valeur-section p span {
   color: red;
   font-size: 25px;
-  font-weight: 700;
+  font-weight: 800;
 }
 .valeur-section h1 {
   position: relative;
   padding-bottom: 20px;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--white);
 }
 
@@ -1920,7 +1920,7 @@ footer {
 
 .etiquettes p {
   color: red;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .portion {
@@ -1940,7 +1940,7 @@ footer {
 
 .portion h3 {
   color: var(--bluedark);
-  font-weight: 700;
+  font-weight: 800;
 }
 .ac-push-last-news__article {
   position: relative;
@@ -1983,7 +1983,7 @@ footer {
 
 .process-wrapper h1 {
   color: #333;
-  font-weight: 700;
+  font-weight: 800;
   margin-top: 125px;
   text-align: center;
   text-transform: uppercase;
@@ -2018,7 +2018,7 @@ footer {
   text-transform: uppercase;
   font-size: 11px;
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 800;
   transition: all ease 0.2s;
   position: relative;
   margin: 0 20px 0 20px;
@@ -2028,7 +2028,7 @@ footer {
   position: relative;
   width: 100%;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 800;
   background: var(--bluesky);
   color: white;
   padding: 10px;
@@ -2059,7 +2059,7 @@ footer {
   text-transform: uppercase;
   color: var(--bluesky);
   letter-spacing: 1px;
-  font-weight: 700;
+  font-weight: 800;
   padding: 10px 0;
 }
 
@@ -2067,7 +2067,7 @@ footer {
   font-size: 16px;
   line-height: 1.8em;
   color: var(--white);
-  font-weight: 700;
+  font-weight: 800;
 }
 
 #progress-content-section .section-content.active {
@@ -2078,7 +2078,7 @@ footer {
 
 .debouche h1 {
   color: #000050;
-  font-weight: 700;
+  font-weight: 800;
   position: relative;
   padding-bottom: 25px;
   text-transform: uppercase;
@@ -2116,7 +2116,7 @@ th {
   padding: 10px;
   text-align: center;
   background-color: rgb(222, 222, 222, 0.7);
-  font-weight: 700;
+  font-weight: 800;
   font-size: 18px;
 }
 
@@ -2134,7 +2134,7 @@ td ul li {
 /*=========== CERTIFICATIONS ===========*/
 .certification h1 {
   color: var(--bluedark);
-  font-weight: 700;
+  font-weight: 800;
   position: relative;
   padding-bottom: 25px;
   text-transform: uppercase;
@@ -2182,11 +2182,11 @@ td ul li {
 }
 
 .certification-body p {
-  font-weight: 600;
+  font-weight: 700;
 }
 .certification p span {
   color: red;
-  font-weight: 700;
+  font-weight: 800;
   font-style: italic;
 }
 .certification p small {
@@ -2262,7 +2262,7 @@ td ul li {
 .timeline li .text {
   text-decoration: none;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   color: #000050;
   text-align: center;
 }
@@ -2303,7 +2303,7 @@ td ul li {
   font-size: 15px;
   color: #fff;
   margin-bottom: 0;
-  font-weight: 600;
+  font-weight: 700;
 }
 .timeline li .active {
   background-color: #000050;
@@ -2318,7 +2318,7 @@ td ul li {
 
 .communique-express h1 {
   color: #000050;
-  font-weight: 700;
+  font-weight: 800;
   position: relative;
   padding-bottom: 25px;
   text-transform: uppercase;
@@ -2358,18 +2358,18 @@ td ul li {
 }
 
 .communique-body p {
-  font-weight: 600;
+  font-weight: 700;
 }
 .communique-body p span {
   color: red;
-  font-weight: 700;
+  font-weight: 800;
   font-style: italic;
 }
 
 /*======== CONDITION D'ADMISSION =========*/
 .condition-admission h1 {
   color: #000050;
-  font-weight: 700;
+  font-weight: 800;
   position: relative;
   padding-bottom: 25px;
   text-transform: uppercase;
@@ -2397,7 +2397,7 @@ td ul li {
 .condition-admission table tr td {
   padding: 10px;
   text-align: center;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--bluedark);
 }
 
@@ -2409,7 +2409,7 @@ td ul li {
   width: 300px;
   background-color: #ffff;
   color: var(--bluedark);
-  font-weight: 700;
+  font-weight: 800;
   text-align: center;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
   display: flex;
@@ -2496,7 +2496,7 @@ td ul li {
 }
 .contact-form h1 {
   color: var(--bluesky);
-  font-weight: 700;
+  font-weight: 800;
 }
 .contact-form {
   background: var(--bluedark);
@@ -2540,7 +2540,7 @@ td ul li {
   border: none;
   border-radius: 5px;
   height: 50px;
-  font-weight: 700;
+  font-weight: 800;
 }
 .map-section {
   position: relative;
