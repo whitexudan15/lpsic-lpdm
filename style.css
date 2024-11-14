@@ -931,13 +931,16 @@ h1.ml8 {
   display: flex;
   justify-content: center;
   margin-top: 20px;
-  background: rgb(222, 222, 222, 0.7);
+  background-image: url(./assets/backgrounds/imagese.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
 }
 
 .mission-section h1 {
   position: relative;
-  color: var(--bluedark);
+  color: var(--white);
   font-weight: 800;
   padding: 20px;
   padding-top: 50px;
@@ -952,7 +955,7 @@ h1.ml8 {
   font-size: 30px;
 }
 .mission-section p {
-  color: var(--bluedark);
+  color: var(--white);
   font-weight: 700;
   padding: 20px;
   text-align: center;
