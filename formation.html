@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formation - lpsic-lpdm</title>
+    <title>Formation - lpsic-lpmmi</title>
     <link rel="icon" type="image/png" href="./assets/logos/LPSIC-removebg-preview.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
@@ -89,7 +89,7 @@
                     <li class="step step01 active" id="lpsic">
                         <div class="step-inner bg">LPSIC</div>
                     </li>
-                    <li class="step step02" id="lpdm">
+                    <li class="step step02" id="lpmmi">
                         <div class="step-inner">LPDM</div>
                     </li>
                 </ul>
@@ -111,7 +111,7 @@
                     </p>
                 </div>
                 <div class="section-content developpement">
-                    <h2>METIERS MULTIMÉDIA & INTERNET</h2>
+                    <h2>DEVELOPPEMENT WEB & MOBILE</h2>
                     <p>
                         Cette spécialité forme des experts polyvalents dans le domaine du numérique,
                         alliant compétences techniques et créativité. Les diplômés peuvent s’orienter
@@ -129,10 +129,7 @@
     <section class="certification mt-5">
         <div class="container">
             <h1 class="text-center mb-4 visible-bottom">Formations Certifiantes</h1>
-            <h5 class="text-center mb-4">Par ailleurs, les étudiants ont la possibilité de s’inscrire parallèlement à
-                leur
-                parcours aux
-                certifications les plus prestigieuses dans le domaine de l’informatique.</h5>
+
             <div class="row mb-4">
                 <div class=" col-lg-6 px-1">
                     <div class="certification-body mt-2 visible-left">
@@ -161,6 +158,7 @@
                 <div class=" col-lg-6 px-1">
                     <div class="certification-body mt-2 visible-right">
                         <p class="text-justify">
+
                             Pour les passioné(e)s du développement, des certifications comme le <span>AWS Certified
                                 Developer</span>, le
                             <span>Google Professional Cloud Developer</span>, et <span>CKAD</span> le <small>(Certified
@@ -180,7 +178,14 @@
                 </div>
             </div>
 
-            <h5 class="text-center">En obtenant ces qualifications, les étudiants peuvent non seulement enrichir leur
+            <h5 class="text-center fw-normal">
+                Les étudiants ont la possibilité de s’inscrire
+                parallèlement à
+                leur
+                parcours, aux
+                certifications les plus prestigieuses dans le domaine de l’informatique. <br>
+                En obtenant ces qualifications, les étudiants peuvent non seulement enrichir
+                leur
                 savoir-faire,
                 mais aussi
                 accroître leur employabilité et leur capacité à naviguer dans un environnement professionnel en
@@ -227,7 +232,7 @@
         <table class="container visible-right">
             <thead>
                 <tr>
-                    <th colspan="3">Métiers de Multimédia & Internet</th>
+                    <th colspan="3">Développement Web & Mobile</th>
                 </tr>
             </thead>
             <tbody>
@@ -264,12 +269,8 @@
                     <img src="./assets/logos/universite_kara_logo-800x510.jpg" alt="" class="img-fluid"
                         style="height: 150px; width: 400px; margin-bottom: 25px">
                     <div>
-                        <h3>UNIVERSITÉ DE KARA</h3>
-                        <p style="font-size: 16px;">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Dolores, id enim ea voluptate porro eaque odit? Necessitatibus
-                            harum esse iste.
-                        </p>
+                        <h3>UNIVERSITÉ KARA</h3>
+
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-3 range mb-4 text-center-md">
@@ -314,12 +315,8 @@
                     <img src="./assets/logos/universite_kara_logo-800x510.jpg" alt="" class="img-fluid"
                         style="height: 150px; width: 400px; margin-bottom: 25px">
                     <div>
-                        <h3>UNIVERSITÉ DE KARA</h3>
-                        <p style="font-size: 16px;">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Dolores, id enim ea voluptate porro eaque odit? Necessitatibus
-                            harum esse iste.
-                        </p>
+                        <h3>UNIVERSITÉ KARA</h3>
+
                     </div>
                 </div>
             </div>
@@ -339,7 +336,6 @@
     </div>
     <script>
         // Script pour faire apparaître les informations de façon dynamique et animé
-
         const sr = ScrollReveal({
             reset: false,
             distance: "25px",
@@ -350,24 +346,6 @@
         sr.reveal(".visible-right", { origin: "right" });
         sr.reveal(".visible-top", { origin: "top" });
         sr.reveal(".visible-bottom", { origin: "bottom" });
-
-        // Variable pour détecter le dernier positionnement de défilement
-        let lastScrollTop = 0;
-
-        // Détecter la direction du défilement
-        window.addEventListener("scroll", () => {
-            const scrollTop =
-                document.documentElement.scrollTop || document.body.scrollTop;
-
-            // Si l'utilisateur fait défiler vers le bas, activer ScrollReveal
-            if (scrollTop < lastScrollTop) {
-                sr.reveal(".visible-left", { origin: "left" });
-                sr.reveal(".visible-right", { origin: "right" });
-                sr.reveal(".visible-top", { origin: "top" });
-                sr.reveal(".visible-bottom", { origin: "bottom" });
-            }
-            lastScrollTop = scrollTop;
-        });
     </script>
     <script>
         // Attendre que la page soit complètement chargée
@@ -425,7 +403,7 @@
             this.querySelector('.step-inner').classList.add('bg');
         });
 
-        document.getElementById('lpdm').addEventListener('click', function () {
+        document.getElementById('lpmmi').addEventListener('click', function () {
             clearBackgrounds();
             this.querySelector('.step-inner').classList.add('bg');
         });

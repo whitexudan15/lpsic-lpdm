@@ -953,7 +953,6 @@ h1.ml8 {
 }
 .mission-section p {
   color: var(--bluedark);
-  font-size: 20px;
   font-weight: 700;
   padding: 20px;
   text-align: center;
@@ -1207,6 +1206,7 @@ h1.ml8 {
     background: red;
   }
 }
+
 @media screen and (max-width: 765px) {
   .counter:nth-child(1),
   .counter:nth-child(3) {
@@ -2315,6 +2315,78 @@ td ul li {
   font-size: 20px;
   display: flex;
 }
+.start ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+}
+.start ul li {
+  width: 500px;
+  list-style: none;
+}
+.start ul li h4 {
+  color: #000050;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.start ul li p {
+  font-weight: 700;
+  color: red;
+}
+.right {
+  margin-right: -200px;
+}
+.left-left {
+  margin-left: -200px;
+}
+.left-left p {
+  width: 500px;
+}
+.line-up {
+  display: flex;
+  justify-content: center;
+}
+.media-body {
+  text-align: right;
+}
+.right .icon {
+  display: flex;
+  justify-content: end;
+  text-align: right;
+}
+.two,
+.four {
+  display: flex;
+  justify-content: end;
+}
+
+.start ul li .icon {
+  height: 124px;
+  width: 124px;
+}
+
+.home-bg {
+  background-image: linear-gradient(
+    rgb(222, 222, 222, 0.9),
+    rgb(0, 0, 80, 0.9)
+  );
+}
+.home .process::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  background: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .home-bg {
+    display: none;
+  }
+}
 
 .communique-express h1 {
   color: #000050;
@@ -2404,15 +2476,17 @@ td ul li {
 /*=========== DEADLINE ==========*/
 .deadline {
   position: fixed;
-  top: 300px;
+  bottom: 10px;
   right: -100%;
   width: 300px;
+  height: 200px;
   background-color: #ffff;
   color: var(--bluedark);
   font-weight: 800;
   text-align: center;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 20px rgba(210, 210, 210, 0.9);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 9999;
@@ -2422,13 +2496,14 @@ td ul li {
   -ms-transition: right 1s ease-in-out;
   -o-transition: right 1s ease-in-out;
 }
-.deadline p {
+.deadline h3 {
   margin: 0;
   padding: 15px 15px 15px 0 !important;
+  font-weight: 700;
 }
 
 .deadline.show {
-  right: 0;
+  right: 10px;
 }
 
 .close {
@@ -2610,5 +2685,33 @@ td ul li {
 @media screen and (max-width: 576px) {
   .contact-height {
     padding-bottom: 30px !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mission-section p {
+    font-size: 20px;
+  }
+  #progress-content-section .section-content p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 458px) {
+  #progress-content-section .section-content h2 {
+    font-size: 17px;
+  }
+  #progress-content-section .section-content p {
+    font-size: 15px;
+  }
+  .certification h5,
+  .formation h5,
+  .roadmap h5 {
+    font-size: 16px;
+  }
+  .legende-actualites h2 {
+    font-size: 17px;
+  }
+  .legende-actualites p {
+    font-size: 14px;
   }
 }

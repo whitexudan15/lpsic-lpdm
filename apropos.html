@@ -142,11 +142,9 @@
                                     occaecat cupidatat non proident, sunt in culpa qui
                                 </blockquote>
                                 <div class="visible-right">
-                                    <h1>Pacôme NYABO</h1>
+                                    <h1 class="fw-bold">Pacôme NYABO</h1>
                                     <small class="">
-                                        Responsable LPSIC-LPDM
-                                        <br>
-                                        Kara-TOGO
+                                        Responsable LPSIC-LPDM, Kara-TOGO
                                     </small>
                                 </div>
                             </div>
@@ -262,12 +260,8 @@
                     <img src="./assets/logos/universite_kara_logo-800x510.jpg" alt="" class="img-fluid"
                         style="height: 150px; width: 400px; margin-bottom: 25px">
                     <div>
-                        <h3>UNIVERSITÉ DE KARA</h3>
-                        <p style="font-size: 16px;">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Dolores, id enim ea voluptate porro eaque odit? Necessitatibus
-                            harum esse iste.
-                        </p>
+                        <h3>UNIVERSITÉ KARA</h3>
+
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-3 range mb-4 text-center-md">
@@ -312,12 +306,8 @@
                     <img src="./assets/logos/universite_kara_logo-800x510.jpg" alt="" class="img-fluid"
                         style="height: 150px; width: 400px; margin-bottom: 25px">
                     <div>
-                        <h3>UNIVERSITÉ DE KARA</h3>
-                        <p style="font-size: 16px;">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Dolores, id enim ea voluptate porro eaque odit? Necessitatibus
-                            harum esse iste.
-                        </p>
+                        <h3>UNIVERSITÉ KARA</h3>
+
                     </div>
                 </div>
             </div>
@@ -335,9 +325,7 @@
         </div>
     </div>
     </div>
-    <script>
-        // Script pour faire apparaître les informations de façon dynamique et animé
-
+    <script> // Script pour faire apparaître les informations de façon dynamique et animé
         const sr = ScrollReveal({
             reset: false,
             distance: "25px",
@@ -347,26 +335,7 @@
         sr.reveal(".visible-left", { origin: "left" });
         sr.reveal(".visible-right", { origin: "right" });
         sr.reveal(".visible-top", { origin: "top" });
-        sr.reveal(".visible-bottom", { origin: "bottom" });
-
-        // Variable pour détecter le dernier positionnement de défilement
-        let lastScrollTop = 0;
-
-        // Détecter la direction du défilement
-        window.addEventListener("scroll", () => {
-            const scrollTop =
-                document.documentElement.scrollTop || document.body.scrollTop;
-
-            // Si l'utilisateur fait défiler vers le bas, activer ScrollReveal
-            if (scrollTop < lastScrollTop) {
-                sr.reveal(".visible-left", { origin: "left" });
-                sr.reveal(".visible-right", { origin: "right" });
-                sr.reveal(".visible-top", { origin: "top" });
-                sr.reveal(".visible-bottom", { origin: "bottom" });
-            }
-            lastScrollTop = scrollTop;
-        });
-    </script>
+        sr.reveal(".visible-bottom", { origin: "bottom" });</script>
     <script>
         // Attendre que la page soit complètement chargée
         window.addEventListener("load", function () {
