@@ -128,14 +128,14 @@
     <!--Certifications-->
     <section class="certification mt-5">
         <div class="container">
-            <h1 class="text-center mb-4">Formations Certifiantes</h1>
+            <h1 class="text-center mb-4 visible-bottom">Formations Certifiantes</h1>
             <h5 class="text-center mb-4">Par ailleurs, les étudiants ont la possibilité de s’inscrire parallèlement à
                 leur
                 parcours aux
                 certifications les plus prestigieuses dans le domaine de l’informatique.</h5>
             <div class="row mb-4">
                 <div class=" col-lg-6 px-1">
-                    <div class="certification-body mt-2">
+                    <div class="certification-body mt-2 visible-left">
                         <p class="text-justify">
                             Pour les passionné(e)s des réseaux informatiques et de la cybersécurité, des certifications
                             telles que le
@@ -159,7 +159,7 @@
 
                 </div>
                 <div class=" col-lg-6 px-1">
-                    <div class="certification-body mt-2">
+                    <div class="certification-body mt-2 visible-right">
                         <p class="text-justify">
                             Pour les passioné(e)s du développement, des certifications comme le <span>AWS Certified
                                 Developer</span>, le
@@ -194,7 +194,7 @@
     <!--Debouchés-->
     <section class="debouche pt-5 pb-5">
         <h1 class="text-center mb-4">débouchés</h1>
-        <table class="container mb-5">
+        <table class="container mb-5 visible-left">
             <thead>
                 <tr>
                     <th colspan="3">Sécurité Informatique & Cybersécurité</th>
@@ -224,7 +224,7 @@
             </tbody>
         </table>
 
-        <table class="container">
+        <table class="container visible-right">
             <thead>
                 <tr>
                     <th colspan="3">Métiers de Multimédia & Internet</th>
@@ -324,7 +324,7 @@
                 </div>
             </div>
             <p class="text-center" style="font-size: 10px; color: #00d0ff;">
-                Copyright &copy; 2024 LPSIC-LPMMI | All Rights Reserved | By GEEKS
+                Copyright &copy; 2024 LPSIC-LPMMI | By GEEKS
                 Club
             </p>
         </div>
@@ -337,6 +337,38 @@
         </div>
     </div>
     </div>
+    <script>
+        // Script pour faire apparaître les informations de façon dynamique et animé
+
+        const sr = ScrollReveal({
+            reset: false,
+            distance: "25px",
+            duration: 2000,
+            delay: 100,
+        });
+        sr.reveal(".visible-left", { origin: "left" });
+        sr.reveal(".visible-right", { origin: "right" });
+        sr.reveal(".visible-top", { origin: "top" });
+        sr.reveal(".visible-bottom", { origin: "bottom" });
+
+        // Variable pour détecter le dernier positionnement de défilement
+        let lastScrollTop = 0;
+
+        // Détecter la direction du défilement
+        window.addEventListener("scroll", () => {
+            const scrollTop =
+                document.documentElement.scrollTop || document.body.scrollTop;
+
+            // Si l'utilisateur fait défiler vers le bas, activer ScrollReveal
+            if (scrollTop < lastScrollTop) {
+                sr.reveal(".visible-left", { origin: "left" });
+                sr.reveal(".visible-right", { origin: "right" });
+                sr.reveal(".visible-top", { origin: "top" });
+                sr.reveal(".visible-bottom", { origin: "bottom" });
+            }
+            lastScrollTop = scrollTop;
+        });
+    </script>
     <script>
         // Attendre que la page soit complètement chargée
         window.addEventListener("load", function () {

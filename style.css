@@ -858,7 +858,7 @@ h1.ml8 {
   cursor: pointer;
   height: 40px;
   width: 40px;
-  border-radius: 50%;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1583,7 +1583,7 @@ footer {
   justify-content: center;
   align-items: center;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(./assets/images/carousel_1.jpg);
+    url(./assets/images/carousel_1.webp);
 
   background-position: center;
   background-repeat: no-repeat;

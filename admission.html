@@ -14,7 +14,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -132,10 +131,10 @@
     </section>
     <!-- COMMUNIQUE -->
     <section class="container communique-express pt-5 pb-5">
-        <h1 class="text-center">Communiqué</h1>
+        <h1 class="text-center visible-bottom">Communiqué</h1>
         <div class="row justify-content-center">
-            <div class="communique-body mt-2 col-lg-8">
-                <p class="text-justify">
+            <div class="communique-body mt-2 col-lg-8 visible-bottom">
+                <p class=" text-justify">
                     Le Président de l’Université de Kara invite les titulaires d’un baccalauréat série C, D ou
                     équivalent
                     datant d’au plus trois ans (BAC 2022, 2023, 2024), ou tout autre diplôme équivalent, désireux
@@ -156,8 +155,8 @@
 
     <!-- CONDITION D'ADMISSION -->
     <section class="condition-admission container">
-        <h1 class="text-center">CONDITIONS ADMISSION</h1>
-        <table class="mb-5 mt-3">
+        <h1 class="text-center visible-bottom">CONDITIONS ADMISSION</h1>
+        <table class="mb-5 mt-3 visible-bottom">
             <thead>
                 <tr>
                     <td>BAC série C, D ou E ou tout autres diplômes équivalents</td>
@@ -242,7 +241,7 @@
                 </div>
             </div>
             <p class="text-center" style="color:#00d0ff; font-size: 13px;">
-                Copyright &copy; 2024 LPSIC-LPMMI | All Rights Reserved | By GEEKS
+                Copyright &copy; 2024 LPSIC-LPMMI | By GEEKS
                 Club
             </p>
         </div>
@@ -256,6 +255,38 @@
     </div>
 
     </div>
+    <script>
+        // Script pour faire apparaître les informations de façon dynamique et animé
+
+        const sr = ScrollReveal({
+            reset: false,
+            distance: "25px",
+            duration: 2000,
+            delay: 100,
+        });
+        sr.reveal(".visible-left", { origin: "left" });
+        sr.reveal(".visible-right", { origin: "right" });
+        sr.reveal(".visible-top", { origin: "top" });
+        sr.reveal(".visible-bottom", { origin: "bottom" });
+
+        // Variable pour détecter le dernier positionnement de défilement
+        let lastScrollTop = 0;
+
+        // Détecter la direction du défilement
+        window.addEventListener("scroll", () => {
+            const scrollTop =
+                document.documentElement.scrollTop || document.body.scrollTop;
+
+            // Si l'utilisateur fait défiler vers le bas, activer ScrollReveal
+            if (scrollTop < lastScrollTop) {
+                sr.reveal(".visible-left", { origin: "left" });
+                sr.reveal(".visible-right", { origin: "right" });
+                sr.reveal(".visible-top", { origin: "top" });
+                sr.reveal(".visible-bottom", { origin: "bottom" });
+            }
+            lastScrollTop = scrollTop;
+        });
+    </script>
     <script>
         // Attendre que la page soit complètement chargée
         window.addEventListener("load", function () {

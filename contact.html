@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contact - lpsic-lpmmi</title>
-        <link rel="icon" type="image/png" href="./assets/logos/LPSIC-removebg-preview.png">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-        <link rel="stylesheet" href="style.css">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-        <script src="assets/js/wow.min.js"></script>
-        <style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - lpsic-lpmmi</title>
+    <link rel="icon" type="image/png" href="./assets/logos/LPSIC-removebg-preview.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <style>
         /* Centrer le loader sur la page */
         .loader {
             position: fixed;
@@ -33,272 +34,215 @@
             background-color: white;
             z-index: 99999;
         }
-        </style>
-    </head>
-    <body>
-        <div class="loader" id="loader">
-            <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/dotSpinner.js"></script>
-            <l-dot-spinner
-                size="80"
-                speed="1"
-                color="#000050"
-                style="padding-bottom: 50px;"
-            ></l-dot-spinner>
+    </style>
+</head>
+
+<body>
+    <div class="loader" id="loader">
+        <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/dotSpinner.js"></script>
+        <l-dot-spinner size="80" speed="1" color="#000050" style="padding-bottom: 50px;"></l-dot-spinner>
+    </div>
+    <!--Menu/Navbar-->
+    <div id="home"></div>
+    <nav class="lux-navbar container-fluid navbar navbar-expand-lg navbar-dark" id="navbar">
+        <div class="container">
+            <a class="navbar-brand text-uppercase" href="index.html">
+                <img src="./assets/logos/LPSIC-removebg-preview.png" alt="" style="height: 60%; width: 120px">
+            </a>
+            <button class="navbar-toggler p-2 py-1" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation" id="toggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item pe-4">
+                        <a href="index.html" class="nav-link active">Accueil</a>
+                    </li>
+                    <li class="nav-item pe-4">
+                        <a class="nav-link" href="apropos.html"> À Propos</a>
+                    </li>
+                    <li class="nav-item pe-4">
+                        <a href="admission.html" class="nav-link">Admission</a>
+                    </li>
+                    <li class="nav-item pe-4">
+                        <a href="formation.html" class="nav-link">Formations</a>
+                    </li>
+                    <li class="nav-item pe-4">
+                        <a class="nav-link" href="evenement.html"> Evènements</a>
+                    </li>
+                    <li class="nav-item pe-4">
+                        <a href="contact.html" class="nav-link actives">Contacts</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <!--Menu/Navbar-->
-        <div id="home"></div>
-        <nav class="lux-navbar container-fluid navbar navbar-expand-lg navbar-dark" id="navbar">
-            <div class="container">
-                <a class="navbar-brand text-uppercase" href="index.html">
-                    <img src="./assets/logos/LPSIC-removebg-preview.png" alt="" style="height: 60%; width: 120px">
-                </a>
-                <button
-                    class="navbar-toggler p-2 py-1"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                    id="toggler"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item pe-4">
-                            <a href="index.html" class="nav-link active">Accueil</a>
-                        </li>
-                        <li class="nav-item pe-4">
-                            <a class="nav-link" href="apropos.html"> À Propos</a>
-                        </li>
-                        <li class="nav-item pe-4">
-                            <a href="admission.html" class="nav-link">Admission</a>
-                        </li>
-                        <li class="nav-item pe-4">
-                            <a href="formation.html" class="nav-link">Formations</a>
-                        </li>
-                        <li class="nav-item pe-4">
-                            <a class="nav-link" href="evenement.html"> Evènements</a>
-                        </li>
-                        <li class="nav-item pe-4">
-                            <a href="contact.html" class="nav-link actives">Contacts</a>
-                        </li>
-                    </ul>
-                </div>
+    </nav>
+    <!--Presentation-->
+    <section class="presentation-contact">
+        <div class="row d-flex text-center text-light px-5 mx-5">
+            <h1>CONTACT</h1>
+            <div class="d-flex justify-content-center pt-2">
+                <small class="pe-3">LPSIC-LPMMI</small>
+                <box-icon name="chevron-right" animation="fade-left" color="#ffffff" class=""></box-icon>
+                <small class="">CONTACT</small>
             </div>
-        </nav>
-        <!--Presentation-->
-        <section class="presentation-contact">
-            <div class="row d-flex text-center text-light px-5 mx-5">
-                <h1>CONTACT</h1>
-                <div class="d-flex justify-content-center pt-2">
-                    <small class="pe-3">LPSIC-LPMMI</small>
-                    <box-icon
-                        name="chevron-right"
-                        animation="fade-left"
-                        color="#ffffff"
-                        class=""
-                    ></box-icon>
-                    <small class="">CONTACT</small>
-                </div>
-            </div>
-        </section>
-        <!--Contact-->
-        <section class="contact">
-            <div class="container contact-height mx-auto">
-                <div class="row">
-                    <div class="col-lg-6 col-contact mb-4">
-                        <div class="contact-section">
-                            <div class="contact-form">
-                                <div>
-                                    <h1 class="text-center mb-3">Contactez-nous</h1>
-                                </div>
-                                <form action="" method="post" enctype="multipart/form-data">
-                                    <input
-                                        class="mb-4 w-100"
-                                        type="text"
-                                        id="nom"
-                                        name="nom"
-                                        placeholder="Nom"
-                                        required
-                                    >
-                                    <input
-                                        class="mb-4 w-100"
-                                        type="tel"
-                                        id="tel"
-                                        name="tel"
-                                        placeholder="Téléphone"
-                                        required
-                                    >
-                                    <input
-                                        class="mb-4 w-100"
-                                        type="email"
-                                        id="email"
-                                        name="email"
-                                        placeholder="Email"
-                                        required
-                                    >
-                                    <textarea
-                                        class="mb-4 w-100"
-                                        name="message"
-                                        id="message"
-                                        rows="6"
-                                        placeholder="Votre message ici..."
-                                    ></textarea>
-                                    <button class="w-100" type="submit">Envoyer</button>
-                                </form>
+        </div>
+    </section>
+    <!--Contact-->
+    <section class="contact">
+        <div class="container contact-height mx-auto">
+            <div class="row">
+                <div class="col-lg-6 col-contact mb-4">
+                    <div class="contact-section">
+                        <div class="contact-form">
+                            <div>
+                                <h1 class="text-center mb-3">Contactez-nous</h1>
                             </div>
+                            <form action="" method="post" enctype="multipart/form-data">
+                                <input class="mb-4 w-100" type="text" id="nom" name="nom" placeholder="Nom" required>
+                                <input class="mb-4 w-100" type="tel" id="tel" name="tel" placeholder="Téléphone"
+                                    required>
+                                <input class="mb-4 w-100" type="email" id="email" name="email" placeholder="Email"
+                                    required>
+                                <textarea class="mb-4 w-100" name="message" id="message" rows="6"
+                                    placeholder="Votre message ici..."></textarea>
+                                <button class="w-100" type="submit">Envoyer</button>
+                            </form>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-map">
-                        <div class="map-section">
-                            <div class="map">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d125876.63166972852!2d1.051393!3d9.6258256!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x102b8fa28fe1eedd%3A0x99f73c2e5c45188c!2sUniversit%C3%A9%20de%20Kara!5e0!3m2!1sfr!2stg!4v1713896729288!5m2!1sfr!2stg"
-                                    width="600"
-                                    height="450"
-                                    style="border: 0"
-                                    allowfullscreen=""
-                                    loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"
-                                ></iframe>
-                            </div>
+                </div>
+                <div class="col-lg-6 col-map">
+                    <div class="map-section">
+                        <div class="map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d125876.63166972852!2d1.051393!3d9.6258256!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x102b8fa28fe1eedd%3A0x99f73c2e5c45188c!2sUniversit%C3%A9%20de%20Kara!5e0!3m2!1sfr!2stg!4v1713896729288!5m2!1sfr!2stg"
+                                width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!--Footer-->
-        <footer class="">
-            <div class="footer-body container">
-                <div class="row pb-3 pt-5 footer-items">
-                    <div class="col-md-12 col-lg-6 d-none d-lg-block text-center-md">
-                        <img
-                            src="./assets/logos/universite_kara_logo-800x510.jpg"
-                            alt=""
-                            class="img-fluid"
-                            style="height: 150px; width: 400px; margin-bottom: 25px"
-                        >
-                        <div>
-                            <h3>UNIVERSITÉ DE KARA</h3>
-                            <p style="font-size: 16px;">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Dolores, id enim ea voluptate porro eaque odit? Necessitatibus
-                harum esse iste.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 range mb-4 text-center-md">
-                        <h5>Lien Utiles</h5>
-                        <a href="#">
-                            <i class="bx bxs-chevron-right bx-fade-left" style="color:#ff0003; padding-right: 5px;"></i>
-                            A propos
-                        </a>
-                        <a href="#">
-                            <i class="bx bxs-chevron-right bx-fade-left" style="color:#ff0003; padding-right: 5px;"></i>
-                            Admission
-                        </a>
-                        <a href="#">
-                            <i class="bx bxs-chevron-right bx-fade-left" style="color:#ff0003; padding-right: 5px;"></i>
-                            Formations
-                        </a>
-                        <a href="#">
-                            <i class="bx bxs-chevron-right bx-fade-left" style="color:#ff0003; padding-right: 5px;"></i>
-                            Ressources
-                        </a>
-                        <a href="#">
-                            <i class="bx bxs-chevron-right bx-fade-left" style="color:#ff0003; padding-right: 5px;"></i>
-                            Galerie
-                        </a>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 range mb-4 text-center-md">
-                        <h5>Coordonnées</h5>
-                        <a href="#" class="pb-1">
-                            <i class="bx bxs-location-plus" style="color:#ff0003; padding-right: 5px;"></i>
-                            Pya, Togo Route N°1
-                        </a>
-                        <a href="#" class="pb-1">
-                            <i class="bx bxs-phone bx-tada" style="color:#ff0003; padding-right: 5px;"></i>
-                            +22870091604
-                        </a>
-                        <a href="#" class="pb-1">
-                            <i class="bx bxs-envelope" style="color:#ff0003; padding-right: 5px;"></i>
-                            claudixime15@yahoo.com
-                        </a>
-                    </div>
-                    <div class="col-md-12 col-lg-6 mt-5 d-sm-block d-lg-none text-center-md">
-                        <img
-                            src="./assets/logos/universite_kara_logo-800x510.jpg"
-                            alt=""
-                            class="img-fluid"
-                            style="height: 150px; width: 400px; margin-bottom: 25px"
-                        >
-                        <div>
-                            <h3>UNIVERSITÉ DE KARA</h3>
-                            <p style="font-size: 16px;">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Dolores, id enim ea voluptate porro eaque odit? Necessitatibus
-                harum esse iste.
-                            </p>
-                        </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer class="">
+        <div class="footer-body container">
+            <div class="row pb-3 pt-5 footer-items">
+                <div class="col-md-12 col-lg-6 d-none d-lg-block text-center-md">
+                    <img src="./assets/logos/universite_kara_logo-800x510.jpg" alt="" class="img-fluid"
+                        style="height: 150px; width: 400px; margin-bottom: 25px">
+                    <div>
+                        <h3>UNIVERSITÉ DE KARA</h3>
+                        <p style="font-size: 16px;">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Dolores, id enim ea voluptate porro eaque odit? Necessitatibus
+                            harum esse iste.
+                        </p>
                     </div>
                 </div>
-                <p class="text-center" style="font-size: 10px; color: #00d0ff;">
-                    Copyright &copy; 2024 LPSIC-LPMMI | All Rights Reserved | By GEEKS
-          Club
-                </p>
+                <div class="col-sm-12 col-md-6 col-lg-3 range mb-4 text-center-md">
+                    <h5>Lien Utiles</h5>
+                    <a href="#">
+                        <i class="bx bxs-chevron-right bx-fade-left" style="color:#ff0003; padding-right: 5px;"></i>
+                        A propos
+                    </a>
+                    <a href="#">
+                        <i class="bx bxs-chevron-right bx-fade-left" style="color:#ff0003; padding-right: 5px;"></i>
+                        Admission
+                    </a>
+                    <a href="#">
+                        <i class="bx bxs-chevron-right bx-fade-left" style="color:#ff0003; padding-right: 5px;"></i>
+                        Formations
+                    </a>
+                    <a href="#">
+                        <i class="bx bxs-chevron-right bx-fade-left" style="color:#ff0003; padding-right: 5px;"></i>
+                        Ressources
+                    </a>
+                    <a href="#">
+                        <i class="bx bxs-chevron-right bx-fade-left" style="color:#ff0003; padding-right: 5px;"></i>
+                        Galerie
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 range mb-4 text-center-md">
+                    <h5>Coordonnées</h5>
+                    <a href="#" class="pb-1">
+                        <i class="bx bxs-location-plus" style="color:#ff0003; padding-right: 5px;"></i>
+                        Pya, Togo Route N°1
+                    </a>
+                    <a href="#" class="pb-1">
+                        <i class="bx bxs-phone bx-tada" style="color:#ff0003; padding-right: 5px;"></i>
+                        +22870091604
+                    </a>
+                    <a href="#" class="pb-1">
+                        <i class="bx bxs-envelope" style="color:#ff0003; padding-right: 5px;"></i>
+                        claudixime15@yahoo.com
+                    </a>
+                </div>
+                <div class="col-md-12 col-lg-6 mt-5 d-sm-block d-lg-none text-center-md">
+                    <img src="./assets/logos/universite_kara_logo-800x510.jpg" alt="" class="img-fluid"
+                        style="height: 150px; width: 400px; margin-bottom: 25px">
+                    <div>
+                        <h3>UNIVERSITÉ DE KARA</h3>
+                        <p style="font-size: 16px;">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Dolores, id enim ea voluptate porro eaque odit? Necessitatibus
+                            harum esse iste.
+                        </p>
+                    </div>
+                </div>
             </div>
-        </footer>
-        <div class="home-button">
-            <div class="back-button">
-                <a href="#home">
-                    <box-icon
-                        name="chevron-up"
-                        animation="tada"
-                        type="solid"
-                        color="#000050"
-                    ></box-icon>
-                </a>
-            </div>
+            <p class="text-center" style="font-size: 10px; color: #00d0ff;">
+                Copyright &copy; 2024 LPSIC-LPMMI | By GEEKS
+                Club
+            </p>
+        </div>
+    </footer>
+    <div class="home-button">
+        <div class="back-button">
+            <a href="#home">
+                <box-icon name="chevron-up" animation="tada" type="solid" color="#000050"></box-icon>
+            </a>
         </div>
     </div>
+    </div>
     <script>
-    // Attendre que la page soit complètement chargée
+        // Attendre que la page soit complètement chargée
         window.addEventListener("load", function () {
             // Cacher le loader après 3 secondes
             setTimeout(function () {
                 document.getElementById("loader").style.display = "none";
             }, 500);
         });
-    
+
         // Navbar background changing
-document.addEventListener("DOMContentLoaded", function () {
-  const navbar = document.querySelector(".lux-navbar");
-  const toggler = document.getElementById("toggler");
+        document.addEventListener("DOMContentLoaded", function () {
+            const navbar = document.querySelector(".lux-navbar");
+            const toggler = document.getElementById("toggler");
 
-  // Scroll event for sticky navbar
-  window.addEventListener("scroll", function () {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            // Scroll event for sticky navbar
+            window.addEventListener("scroll", function () {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    if (scrollTop >= 100) {
-      navbar.classList.add("sticky");
-    } else {
-      navbar.classList.remove("sticky");
-    }
-  });
+                if (scrollTop >= 100) {
+                    navbar.classList.add("sticky");
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            });
 
-  // Toggler click event for changing background color
-  toggler.addEventListener("click", function () {
-    var isExpanded = this.getAttribute("aria-expanded") === "true";
+            // Toggler click event for changing background color
+            toggler.addEventListener("click", function () {
+                var isExpanded = this.getAttribute("aria-expanded") === "true";
 
-    if (isExpanded) {
-      navbar.style.background = "#000050";
-    } else {
-      navbar.style.background = "transparent";
-    }
-  });
-});
+                if (isExpanded) {
+                    navbar.style.background = "#000050";
+                } else {
+                    navbar.style.background = "transparent";
+                }
+            });
+        });
     </script>
 </body>
+
 </html>
