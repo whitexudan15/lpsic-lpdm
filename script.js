@@ -376,9 +376,6 @@ const sr = ScrollReveal({
   duration: 2000,
   delay: 100,
 });
-sr.reveal(".visible-left", { origin: "left" });
-sr.reveal(".visible-right", { origin: "right" });
-sr.reveal(".visible-top", { origin: "top" });
 sr.reveal(".visible-bottom", { origin: "bottom" });
 
 // Variable pour détecter le dernier positionnement de défilement
@@ -391,9 +388,6 @@ window.addEventListener("scroll", () => {
 
   // Si l'utilisateur fait défiler vers le bas, activer ScrollReveal
   if (scrollTop < lastScrollTop) {
-    sr.reveal(".visible-left", { origin: "left" });
-    sr.reveal(".visible-right", { origin: "right" });
-    sr.reveal(".visible-top", { origin: "top" });
     sr.reveal(".visible-bottom", { origin: "bottom" });
   }
 
